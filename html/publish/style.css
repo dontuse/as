@@ -614,7 +614,6 @@ textarea {
 .b-text p {
   margin: 0;
   margin-bottom: 1em;
-  margin-top: 1em;
 }
 .b-text blockquote {
   color: #0e4d8c;
@@ -1089,4 +1088,75 @@ textarea {
   line-height: 26px;
   margin-bottom: 20px;
 }
-/*===| .b-slider |======================end==========================================*/
+/*===| .b-slider |======================end==========================================*//*---| .b-index-nav |----------------------start----------------------------------------*/
+.b-index-nav {
+  *zoom: 1;
+}
+.b-index-nav:before,
+.b-index-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-index-nav:after {
+  clear: both;
+}
+.b-index-nav_col {
+  float: left;
+  margin-right: 30px;
+  background: red;
+  width: 300px;
+  height: 334;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+}
+.b-index-nav_col:last-child {
+  margin-right: 0;
+}
+.b-index-nav__pic {
+  position: relative;
+  height: 198px;
+  overflow: hidden;
+}
+.b-index-nav__t {
+  background: #0163a0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42px;
+  line-height: 42px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 13px;
+}
+.b-index-nav__lnk {
+  display: block;
+  padding-left: 14px;
+  border-bottom: 1px #ededed solid;
+  line-height: 32px;
+  background: url("../blocks//i-img/n.png") no-repeat 283px center;
+}
+/*===| .b-index-nav |======================end==========================================*//*---| .b-c-content |----------------------start----------------------------------------*/
+.b-c-content {
+  -moz-column-count: 2;
+  /* Firefox */
+
+  -webkit-column-count: 2;
+  /* Safari and Chrome */
+
+  column-count: 2;
+  padding-top: 20px;
+  -webkit-column-gap: 35px;
+  column-gap: 470px;
+}
+/*===| .b-c-content |======================end==========================================*/
