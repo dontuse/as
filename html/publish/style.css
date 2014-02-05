@@ -990,7 +990,11 @@ textarea {
   float: left;
   *display: inline;
 }
-/*===| .b-carousel |======================end==========================================*//*---| .b-jet |----------------------start----------------------------------------*/
+/*===| .b-carousel |======================end==========================================*/.b-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/*---| .b-jet |----------------------start----------------------------------------*/
 .b-jet__logo,
 .b-jet__logo:visited {
   display: block;
@@ -1159,4 +1163,133 @@ textarea {
   -webkit-column-gap: 35px;
   column-gap: 470px;
 }
-/*===| .b-c-content |======================end==========================================*/
+/*===| .b-c-content |======================end==========================================*//*---| .b-porttfolio-i |----------------------start----------------------------------------*/
+.b-porttfolio-i {
+  height: 367px;
+  *zoom: 1;
+}
+.b-porttfolio-i:before,
+.b-porttfolio-i:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-porttfolio-i:after {
+  clear: both;
+}
+.b-porttfolio-i__pic {
+  float: left;
+  width: 367px;
+  width: 630px;
+  margin-right: 26px;
+}
+.b-porttfolio-i__th {
+  width: 137px;
+  height: 103px;
+  float: left;
+  margin-right: 27px;
+  margin-bottom: 30px;
+}
+.b-porttfolio-i__th:nth-child(even) {
+  margin-right: 0;
+}
+.b-porttfolio-i__th:hover {
+  outline: 3px solid red;
+}
+.b-porttfolio-i img {
+  max-width: 100%;
+}
+/*===| .b-porttfolio-i |======================end==========================================*/.b-proj-nav {
+  *zoom: 1;
+  margin-top: 40px;
+}
+.b-proj-nav:before,
+.b-proj-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-proj-nav:after {
+  clear: both;
+}
+.b-proj-nav__a {
+  width: 467px;
+  height: 105px;
+  float: left;
+  background: #ebf2f6;
+  margin-right: 10px;
+}
+.b-proj-nav__a:last-child {
+  margin-right: 0;
+}
+.b-proj-nav__a:hover {
+  background: red;
+}
+.b-proj-nav__a-pic {
+  float: left;
+}
+.b-proj-nav__a_next .b-proj-nav__a-pic {
+  float: right;
+}
+.b-proj-nav__content {
+  overflow: hidden;
+  padding: 5px;
+  display: block;
+}
+.b-proj-nav__txt {
+  display: block;
+}
+.b-prod {
+  *zoom: 1;
+  margin-bottom: 20px;
+}
+.b-prod:before,
+.b-prod:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-prod:after {
+  clear: both;
+}
+.b-prod-el {
+  height: 160px;
+  float: left;
+  background: red;
+  margin-right: 31px;
+  position: relative;
+  width: 300px;
+  height: 198px;
+  -webkit-border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px;
+  -moz-background-clip: padding;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+}
+.b-prod-el:nth-child(even) {
+  margin-right: 0;
+}
+.b-prod__pic {
+  display: block;
+  overflow: hidden;
+  line-height: 160px;
+  height: 160px;
+  text-align: center;
+}
+.b-prod__title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: #ffffff;
+  background: #0163a0;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 10px;
+}
