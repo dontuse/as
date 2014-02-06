@@ -1,0 +1,75 @@
+.b-clients {
+  position: relative;
+}
+
+
+.b-clients__item {
+  margin-right: 20px;
+  background: #f1f1f1;
+  display: block;
+  overflow: hidden;
+  .transition(opacity , 0.3s , linear)
+}
+
+.b-clients__item:hover {
+  opacity: 0.7;
+}
+
+.b-clients__item img {
+  max-width: 100%;
+
+}
+
+.b-clients__next {
+  position: absolute;
+  width: 23px;
+  height: 38px;
+  background: red;
+  top: 43px;
+  right: -42px;
+  text-indent: -999999px;
+  overflow: hidden;
+  background: url("@{blockPath}/i-img/arrow.png") no-repeat 0 -110px;
+}
+
+.b-clients__next:hover {
+  background: url("@{blockPath}/i-img/arrow.png") no-repeat  0 0;
+}
+
+.b-clients__prev {
+  position: absolute;
+  width: 23px;
+  height: 38px;
+  background: red;
+  top: 43px;
+  left: -42px;
+  text-indent: -999999px;
+  overflow: hidden;
+  background: url("@{blockPath}/i-img/arrow.png") no-repeat 0 -53px;
+}
+
+.b-clients__prev:hover {
+  background: url("@{blockPath}/i-img/arrow.png") no-repeat  0 -161px;
+}
+
+.b-clients__carousel {
+  margin-bottom: 20px;
+}
+
+.b-clients__pagi {
+  text-align: center;
+}
+
+.b-clients__pagi a {
+  width: 10px;
+  height: 10px;
+  background: #1a2c5e;
+  display: inline-block;
+  text-indent: -9999999px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.b-clients__pagi a.active {
+  background: red;
+}
