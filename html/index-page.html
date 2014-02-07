@@ -9,6 +9,60 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="publish/style.css">
     <script src="html/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <style>
+        #slider { width: 700px; height: 390px; }
+
+        /* animate.css animation settings
+         * If animating elements inside the panel, include the element here ( e.g. #slider li, #slider img {...} )
+         */
+        .js-slider .b-slider__box img {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-timing-function: ease;
+
+            -moz-animation-duration: 1s;
+            -moz-animation-delay: .2s;
+            -moz-animation-timing-function: ease;
+            -moz-animation-fill-mode: both;
+            -ms-animation-duration: 1s;
+            -ms-animation-delay: .2s;
+            -ms-animation-timing-function: ease;
+            -ms-animation-fill-mode: both;
+            animation-duration: 1s;
+            animation-delay: .2s;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+        }
+
+        .b-slider__box .b-slider__text {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-delay: 0s;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-duration: 1s;
+            -moz-animation-delay: .2s;
+            -moz-animation-timing-function: ease;
+            -moz-animation-fill-mode: both;
+            -ms-animation-duration: 1s;
+            -ms-animation-delay: .2s;
+            -ms-animation-timing-function: ease;
+            -ms-animation-fill-mode: both;
+            animation-duration: 1s;
+            animation-delay: .2s;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -18,42 +72,80 @@
 
 
 <section  class="b-wrapper ">
-    <div class="b-slider b-box b-box_1">
-        <div class="b-slider__box b-slider__box_cur">
-            <img src="tmp/sldier-img.jpg">
-        </div>
-        <div class="b-slider__box">
-            <img src="tmp/sldier-img.jpg">
-        </div>
-        <div class="b-slider__box">
-            <img src="tmp/sldier-img.jpg">
-        </div>
-
-        <div class="b-slider__text">
-            <div class="b-slider_t-h">
-                Стальные здания <br/>
-                для бизнеса
+    <div class="b-box b-box_1">
+        <div class="js-slider b-slider">
+            <div class="b-slider__box">
+                <img src="tmp/sldier-img.jpg">
+                <div class="b-slider__text">
+                    <div class="b-slider_t-h">
+                        Стальные здания <br/>
+                        для бизнеса
+                    </div>
+                    <div class="b-slider__content">
+                        <p>
+                            Пояснительный текст с ссылкой на продукт и текст с ссылкой на продукт. Пояснительный текст на
+                            продукт
+                        </p>
+                    </div>
+                    <div>
+                        <a href="" class="b-button">Подробнее</a>
+                    </div>
+                </div>
             </div>
-            <div class="b-slider__content">
-                <p>
-                    Пояснительный текст с ссылкой на продукт и текст с ссылкой на продукт. Пояснительный текст на
-                    продукт
-                </p>
+            <div  class="b-slider__box">
+                <img src="tmp/sldier-img2.jpg">
+                <div class="b-slider__text">
+                    <div class="b-slider_t-h">
+                        Ква ква
+                    </div>
+                    <div class="b-slider__content">
+                        <p>
+                            Пояснительный текст с ссылкой на продукт и текст с ссылкой на продукт. Пояснительный текст на
+                            продукт
+                        </p>
+                    </div>
+                    <div>
+                        <a href="" class="b-button">Подробнее</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="" class="b-button">Подробнее</a>
+            <div class="b-slider__box">
+                <img src="tmp/sldier-img3.jpg">
+                <div class="b-slider__text">
+                    <div class="b-slider_t-h">
+                        туалеты
+                    </div>
+                    <div class="b-slider__content">
+                        <p>
+                            Пояснительный текст с ссылкой на продукт и текст с ссылкой на продукт. Пояснительный текст на
+                            продукт
+                        </p>
+                    </div>
+                    <div>
+                        <a href="" class="b-button">Подробнее</a>
+                    </div>
+                </div>
             </div>
+            <div  class="b-slider__box">
+                <img src="tmp/sldier-img.jpg">
+                <div class="b-slider__text">
+                    <div class="b-slider_t-h">
+                       asdasdasdasdasd asdasd
+                    </div>
+                    <div class="b-slider__content">
+                        <p>
+                            Пояснительный текст с ссылкой на продукт и текст с ссылкой на продукт. Пояснительный текст на
+                            продукт
+                        </p>
+                    </div>
+                    <div>
+                        <a href="" class="b-button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-
-        <a class="b-slider__arrow b-slider__arrow_left" href="">prev</a>
-        <a class="b-slider__arrow b-slider__arrow_right" href="">net</a>
-
-        <nav class="b-slider__controls">
-            <a class="b-slider__control b-slider__control_active" href=""></a>
-            <a class="b-slider__control" href=""></a>
-            <a class="b-slider__control" href=""></a>
-            <a class="b-slider__control" href=""></a>
-        </nav>
     </div>
 </section>
 

@@ -1,9 +1,6 @@
 var glb = {};
 
 
-
-
-
 $(function () {
     var $files = $('.js-file');
 
@@ -74,3 +71,28 @@ $(function () {
     });
 })(jQuery);
 /* carousel */
+
+/* slider */
+
+$(function () {
+
+    $('.b-slider__box img').attr('data-animate','fadeIn, fadeOut');
+    $('.b-slider__box .b-slider__text').attr('data-animate','fadeIn, fadeOut');
+
+    $('.js-slider').anythingSlider({
+        animationTime: 0,  // no jQuery animation - no sliding left/right
+        delayBeforeAnimate: 0, // add delay before switching so you can see the css3 animation
+        buildStartStop: false,
+        autoPlay: true,
+        hashTags : false
+    }).anythingSliderFx(
+        {},    // no fx animation, it's all css baby!
+        {
+            stopRepeat : false         // fx option to prevent repeating animation on startup/clicking the same slide (default is false)
+            //dataAnimate: ['rotateIn', 'rotateOut'] // data attribute containing the in and out animation.css class names to use
+        }
+    );
+
+
+});
+/* slider */

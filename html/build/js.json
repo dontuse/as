@@ -1,6 +1,8 @@
 [
     "../js/lib/jquery-1.8.2.min.js",
     "../js/lib/jcarousel/jquery.jcarousel.js",
+    "../js/lib/jquery.anythingslider.js",
+    "../js/lib/jquery.anythingslider.fx.js",
     "../js/all.js"
 
 ]
