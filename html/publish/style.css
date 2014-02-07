@@ -728,6 +728,9 @@ have a fixed width and height (but it's not required).
 .b-box_2 {
   margin-bottom: 20px;
 }
+.b-box_1 {
+  margin-bottom: 20px;
+}
 /*---| .b-wrapper |----------------------start----------------------------------------*/
 .b-wrapper {
   width: 960px;
@@ -1050,6 +1053,9 @@ have a fixed width and height (but it's not required).
 .b-slider__box_cur {
   display: block;
 }
+.b-slider__content {
+  margin-bottom: 25px;
+}
 .b-slider__controls {
   position: absolute;
   left: 0;
@@ -1072,6 +1078,7 @@ have a fixed width and height (but it's not required).
 .b-slider__arrow {
   position: absolute;
   top: 50%;
+  margin-top: -24px;
   background: red;
   width: 26px;
   height: 48px;
@@ -1080,13 +1087,17 @@ have a fixed width and height (but it's not required).
 }
 .b-slider__arrow_left {
   right: 100%;
+  background: url("../blocks//i-img/prev-arrow.png") no-repeat;
+  margin-right: 20px;
 }
 .b-slider__arrow_right {
   left: 100%;
+  background: url("../blocks//i-img/next-arrow.png") no-repeat;
+  margin-left: 20px;
 }
 .b-slider__text {
   position: absolute;
-  width: 386px;
+  width: 325px;
   -webkit-border-radius: 3px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 3px;
@@ -1094,9 +1105,10 @@ have a fixed width and height (but it's not required).
   border-radius: 3px;
   background-clip: padding-box;
   background-color: rgba(255, 255, 255, 0.9);
-  top: 20px;
-  left: 20px;
-  padding: 40px;
+  top: 41px;
+  left: 41px;
+  padding: 31px;
+  padding-top: 25px;
 }
 .b-slider__text p {
   margin-bottom: 10px;
@@ -1104,7 +1116,10 @@ have a fixed width and height (but it's not required).
 .b-slider_t-h {
   font-size: 20px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  font-family: Verdana, "Bitstream Vera Sans", "DejaVu Sans", "Liberation Sans", Geneva, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 /*===| .b-slider |======================end==========================================*//*---| .b-index-nav |----------------------start----------------------------------------*/
 .b-index-nav {
@@ -1135,6 +1150,7 @@ have a fixed width and height (but it's not required).
   -webkit-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
   -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
   box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  overflow: hidden;
 }
 .b-index-nav_col:last-child {
   margin-right: 0;
@@ -1499,6 +1515,8 @@ have a fixed width and height (but it's not required).
   -o-transition: opacity 0.3s linear;
   -ms-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
+  height: 83px;
+  line-height: 83px;
 }
 .b-clients__item:hover {
   opacity: 0.7;
@@ -1506,33 +1524,34 @@ have a fixed width and height (but it's not required).
 .b-clients__item img {
   max-width: 100%;
 }
+.b-clients__item {
+  width: 137px;
+}
 .b-clients__next {
   position: absolute;
-  width: 23px;
-  height: 38px;
-  background: red;
-  top: 43px;
+  width: 26px;
+  height: 48px;
+  top: 15px;
   right: -42px;
   text-indent: -999999px;
   overflow: hidden;
-  background: url("../blocks//i-img/arrow.png") no-repeat 0 -110px;
+  background: url("../blocks//i-img/next-arrow.png") no-repeat;
 }
 .b-clients__next:hover {
-  background: url("../blocks//i-img/arrow.png") no-repeat 0 0;
+  background: url("../blocks//i-img/next-arrow_active.png") no-repeat;
 }
 .b-clients__prev {
   position: absolute;
-  width: 23px;
-  height: 38px;
-  background: red;
-  top: 43px;
+  width: 26px;
+  height: 48px;
+  top: 15px;
   left: -42px;
   text-indent: -999999px;
   overflow: hidden;
-  background: url("../blocks//i-img/arrow.png") no-repeat 0 -53px;
+  background: url("../blocks//i-img/prev-arrow.png") no-repeat;
 }
 .b-clients__prev:hover {
-  background: url("../blocks//i-img/arrow.png") no-repeat 0 -161px;
+  background: url("../blocks//i-img/prev-arrow_active.png") no-repeat;
 }
 .b-clients__carousel {
   margin-bottom: 20px;
@@ -1554,18 +1573,17 @@ have a fixed width and height (but it's not required).
 }
 /*---| .b-carousel |----------------------start----------------------------------------*/
 .b-carousel {
-  position: relative;
-  overflow: hidden;
-  height: 100px;
+  background: #ebf2f6;
+  padding-top: 27px;
+  padding-bottom: 23px;
 }
-.b-carousel__inner {
-  background: none;
-  border: none;
-  width: 20000em;
-  position: absolute;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.b-carousel__h {
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 20;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Verdana, "Bitstream Vera Sans", "DejaVu Sans", "Liberation Sans", Geneva, sans-serif;
 }
 .b-carousel__el {
   float: left;

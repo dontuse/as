@@ -1,6 +1,8 @@
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
+AddHandler application/x-httpd-php .php .html .htm
+
 # Note .htaccess files are an overhead, this logic should be in your Apache
 # config if possible: httpd.apache.org/docs/2.2/howto/htaccess.html
 

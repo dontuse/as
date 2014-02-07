@@ -70,19 +70,7 @@ $(function () {
                 target: '+=1'
             });
 
-        /*
-         Pagination initialization
-         */
-        $('.jcarousel-pagination')
-            .on('jcarouselpagination:active', 'a', function () {
-                $(this).addClass('active');
-            })
-            .on('jcarouselpagination:inactive', 'a', function () {
-                $(this).removeClass('active');
-            })
-            .jcarouselPagination({
-                'perPage': 4
-            });
+
     });
 })(jQuery);
 /* carousel */
