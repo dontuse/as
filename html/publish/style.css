@@ -1590,7 +1590,13 @@ have a fixed width and height (but it's not required).
   float: left;
   *display: inline;
 }
-/*===| .b-carousel |======================end==========================================*//*
+/*===| .b-carousel |======================end==========================================*/.b-documents__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+/*
     AnythingSlider v1.8+ LESS Default theme
     By Rob Garrison, based on default anythingslider.css
 */
