@@ -96,3 +96,10 @@ $(function () {
 
 });
 /* slider */
+
+
+/* colorbox*/
+
+$(".group4").colorbox({rel:'group4', slideshow:true , maxHeight: '98%'});
+
+/* colorbox*/

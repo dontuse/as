@@ -3,6 +3,7 @@
     "../js/lib/jcarousel/jquery.jcarousel.js",
     "../js/lib/jquery.anythingslider.js",
     "../js/lib/jquery.anythingslider.fx.js",
+    "../js/lib/jquery.colorbox.js",
     "../js/all.js"
 
 ]
