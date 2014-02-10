@@ -22,9 +22,24 @@
 
 .b-text__h1 {}
 
-.b-text__h2 {}
+.b-text__h2,
+.b-text h2 {
+  font-size: 15px;
+  font-family: @Verdana;
+  line-height: 17px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #495f6a;
+}
 
-.b-text__h3 {}
+.b-text__h3,
+.b-text h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #31252c;
+}
 
 .b-text__ul {}
 
@@ -33,6 +48,10 @@
 .b-text__ol {}
 
 .b-text__ol-li {}
+
+.b-text li {
+  margin-bottom: 12px;
+}
 
 .b-text blockquote  {
   color: #0e4d8c;
@@ -55,11 +74,18 @@
 
 .b-text__table th {
   text-align: left;
+  font-weight: normal;
+  padding-left: 11px;
 }
 
 .b-text__table td  {
-  border: 1px solid #222222;
-  padding: 5px;
+  border: none;
+  padding: 15px;
+  padding-left: 11px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f8fa;
 }
 
 .b-text__img  {
