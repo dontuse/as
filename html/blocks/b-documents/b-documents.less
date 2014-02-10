@@ -7,7 +7,7 @@
   vertical-align: top;
   margin-right: 30px;
   margin-bottom: 20px;
-  width: 186px;
+  width: 194px;
   margin-right: 38px;
 
 }
@@ -32,6 +32,14 @@
   overflow: hidden;
   display: block;
   margin-bottom: 20px;
+  text-align: center;
+  .box-shadow(0 0 5px rgba(0,31,62,.4));
+  background: #ffffff;
+  height: 266px;
+}
+
+.b-documents__pic img {
+  max-width: 100%;
 }
 
 .b-documents__pic:after {
@@ -40,14 +48,21 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
 }
 
 .b-documents__down-lnk,
 .b-documents__down-lnk:visited {
+  font-size: 11px;
+  color: #49606a;
   padding-left: 40px;
   text-decoration: none;
   display: block;
   background: url("@{blockPath}/i-img/pdf-icon.png") no-repeat  0 0;
+  min-height: 32px;
+}
+
+.b-documents__down-lnk span {
+  text-decoration: underline;
 }

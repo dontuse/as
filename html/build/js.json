@@ -4,6 +4,7 @@
     "../js/lib/jquery.anythingslider.js",
     "../js/lib/jquery.anythingslider.fx.js",
     "../js/lib/jquery.colorbox.js",
+    "../js/lib/jquery.colorbox-ru.js",
     "../js/all.js"
 
 ]
