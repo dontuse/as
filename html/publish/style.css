@@ -518,6 +518,10 @@ input,
 select,
 textarea {
   color: #222;
+  outline: none;
+}
+button:active {
+  outline: none;
 }
 body,
 html {
@@ -536,10 +540,14 @@ body {
 a,
 a:visited {
   color: #0078b0;
+  outline: none;
 }
 a:hover {
   color: #f69e00;
   text-decoration: none;
+}
+a:active {
+  outline: none;
 }
 h1,
 h2,
@@ -1010,11 +1018,10 @@ have a fixed width and height (but it's not required).
   outline: 1px solid #ffd54e;
 }
 /*===| .b-textarea |======================end==========================================*/.b-title {
-  margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
   text-transform: uppercase;
   color: #31252c;
 }
@@ -1658,6 +1665,42 @@ have a fixed width and height (but it's not required).
   vertical-align: top;
   margin-right: 30px;
   margin-bottom: 20px;
+  width: 186px;
+  margin-right: 38px;
+}
+.b-documents__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.b-documents__h {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  font-weight: bold;
+  color: #495f6a;
+  text-transform: uppercase;
+}
+.b-documents__pic {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+}
+.b-documents__pic:after {
+  content: ' ';
+  background: url("../blocks//i-img/search.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.b-documents__down-lnk,
+.b-documents__down-lnk:visited {
+  padding-left: 40px;
+  text-decoration: none;
+  display: block;
+  background: url("../blocks//i-img/pdf-icon.png") no-repeat 0 0;
 }
 .b-sub-nav__sub {
   margin-left: 50px;
@@ -1684,7 +1727,22 @@ have a fixed width and height (but it's not required).
 .b-sub-nav__sub-box {
   margin-bottom: 10px;
 }
-/*
+/*---| .b-callUs |----------------------start----------------------------------------*/
+.b-callUs-form {
+  padding-top: 9px;
+}
+.b-callUs-form__col-1 {
+  width: 317px;
+  float: left;
+}
+.b-callUs-form__col-2 {
+  float: right;
+  width: 315px;
+}
+.b-callUs-form__row {
+  clear: both;
+}
+/*===| .b-callUs |======================end==========================================*//*
     AnythingSlider v1.8+ LESS Default theme
     By Rob Garrison, based on default anythingslider.css
 */
@@ -2171,6 +2229,8 @@ COMMON SLIDER STYLING
 #cboxContent {
   margin-top: 20px;
   background: #000;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .cboxIframe {
   background: #fff;
@@ -2180,7 +2240,6 @@ COMMON SLIDER STYLING
   border: 1px solid #ccc;
 }
 #cboxLoadedContent {
-  border: 5px solid #000;
   background: #fff;
 }
 #cboxTitle {
@@ -2226,24 +2285,24 @@ COMMON SLIDER STYLING
 #cboxPrevious {
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: -50px;
   margin-top: -32px;
-  background: url(images/controls.png) no-repeat top left;
-  width: 28px;
-  height: 65px;
   text-indent: -9999px;
+  background: url("../blocks//i-img/prev-arrow.png") no-repeat top right;
+  width: 26px;
+  height: 48px;
 }
 #cboxPrevious:hover {
-  background-position: bottom left;
+  background: url("../blocks//i-img/prev-arrow_active.png") no-repeat top right;
 }
 #cboxNext {
   position: absolute;
   top: 50%;
-  right: 5px;
+  right: -50px;
   margin-top: -32px;
-  background: url(images/controls.png) no-repeat top right;
-  width: 28px;
-  height: 65px;
+  background: url("../blocks//i-img/next-arrow.png") no-repeat top right;
+  width: 26px;
+  height: 48px;
   text-indent: -9999px;
 }
 #cboxNext:hover {

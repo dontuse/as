@@ -100,8 +100,8 @@ $(function () {
 
 /* colorbox*/
 
-$(".group4").colorbox({rel:'group4', slideshow:true , maxHeight: '98%'});
+$(".group4").colorbox({rel:'group4', slideshow:false , maxHeight: '98%'});
 
-$(".inline").colorbox({inline:true, width:"740px", open : true});
+$(".inline").colorbox({inline:true, width:"740px"});
 
 /* colorbox*/

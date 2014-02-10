@@ -33,13 +33,13 @@
 
 <!-- This contains the hidden content for inline calls -->
 <div style='display:none'>
-    <div id='inline_content' style='padding:10px; background:#fff; height: 440px'>
+    <div id='inline_content' style='padding:10px; background:#fff; width: 688px; height: 400px'>
         <div class="b-text">
             <h2 class="b-text__h1">заявка</h2>
 
             <p>
                 Мы с удовольствием разработаем ценовое предложение на ваше здание. <br/>
-                Оперативно предоставим Вам подробное коммерческое предложение с планами, спецификацией и описанием
+                Оперативно предоставим Вам подробное коммерческое предложение <br/> с планами, спецификацией и описанием
                 модулей.
             </p>
         </div>
@@ -62,7 +62,7 @@
             </div>
 
             <div class="b-callUs-form__col-2">
-                <div class="b-control">
+                <div class="b-control b-control_state_error">
                     <div class="b-contol__col-1">
                         <label class="b-contol__label">Телефон / факс</label>
                     </div>
@@ -76,21 +76,23 @@
                 </div>
             </div>
 
-
-            <div class="b-control">
-                <div class="b-contol__col-1">
-                    <label class="b-contol__label">Опишите, что вам необходимо</label>
-                </div>
-                <div class="b-contol__col-2">
-                    <i class="b-contol__r">*</i>
-                    <textarea class="b-contol__textarea"
-                              placeholder="Например, вам необходимо построить завод"></textarea>
+            <div class="b-callUs-form__row">
+                <div class="b-control">
+                    <div class="b-contol__col-1">
+                        <label class="b-contol__label">Опишите, что вам необходимо</label>
+                    </div>
+                    <div class="b-contol__col-2">
+                        <i class="b-contol__r">*</i>
+                        <textarea class="b-contol__textarea"
+                                  placeholder="Например, вам необходимо построить завод"></textarea>
                         <span class="b-contol__error">
                             Необходимо заполнить это поле.
                         </span>
+                    </div>
                 </div>
             </div>
-            <div>
+
+            <div class="b-callUs-form__col-2">
                 <a style="width: 100%; text-align: center;" class="b-button" href="">Отправить</a>
             </div>
         </div>

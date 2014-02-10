@@ -7,4 +7,47 @@
   vertical-align: top;
   margin-right: 30px;
   margin-bottom: 20px;
+  width: 186px;
+  margin-right: 38px;
+
+}
+
+.b-documents__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.b-documents__h {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  font-weight: bold;
+  color: #495f6a;
+  text-transform: uppercase;
+
+}
+
+.b-documents__pic {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.b-documents__pic:after {
+  content: ' ';
+  background: url("@{blockPath}/i-img/search.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.b-documents__down-lnk,
+.b-documents__down-lnk:visited {
+  padding-left: 40px;
+  text-decoration: none;
+  display: block;
+  background: url("@{blockPath}/i-img/pdf-icon.png") no-repeat  0 0;
 }
