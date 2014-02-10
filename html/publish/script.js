@@ -3776,6 +3776,6 @@ $(function () {
 
 $(".group4").colorbox({rel:'group4', slideshow:true , maxHeight: '98%'});
 
-$(".inline").colorbox({inline:true, width:"740px"});
+$(".inline").colorbox({inline:true, width:"740px", open : true});
 
 /* colorbox*/

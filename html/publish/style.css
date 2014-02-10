@@ -637,7 +637,8 @@ have a fixed width and height (but it's not required).
   font-size: 13px;
   line-height: 1.3076923076923077;
 }
-.b-text h1 {
+.b-text h1,
+.b-text .b-text__h1 {
   font-size: 20px;
   font-weight: bold;
   color: #31252c;
@@ -957,6 +958,7 @@ have a fixed width and height (but it's not required).
   color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 .b-table-menu__a:hover {
   background: #710909;
@@ -1008,8 +1010,13 @@ have a fixed width and height (but it's not required).
   outline: 1px solid #ffd54e;
 }
 /*===| .b-textarea |======================end==========================================*/.b-title {
-  font-size: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #31252c;
 }
 /*---| .b-jet |----------------------start----------------------------------------*/
 .b-jet__logo,
@@ -1327,6 +1334,7 @@ have a fixed width and height (but it's not required).
 /*---| .b-porttfolio |----------------------start----------------------------------------*/
 .b-porttfolio {
   *zoom: 1;
+  margin-top: 26px;
 }
 .b-porttfolio:before,
 .b-porttfolio:after {
@@ -1337,14 +1345,69 @@ have a fixed width and height (but it's not required).
 .b-porttfolio:after {
   clear: both;
 }
-.b-porttfolio__el {
-  float: left;
+.b-porttfolio__el,
+.b-porttfolio__el:visited {
+  display: inline-block;
+  vertical-align: top;
   width: 297px;
-  margin-right: 23px;
-  margin-bottom: 20px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  -webkit-border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px;
+  -moz-background-clip: padding;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+.b-porttfolio__el:nth-child(3n) {
+  margin-right: 0;
+}
+.b-porttfolio__pic {
+  position: relative;
+  display: block;
+  height: 190px;
+  padding-bottom: 40px;
+}
+.b-porttfolio__pic img {
+  max-width: 100%;
 }
 .b-porttfolio__title {
   font-size: 15px;
+  font-weight: bold;
+  background: #0163a0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow: hidden;
+  color: #ffffff;
+  padding-left: 17px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 17px;
+}
+.b-porttfolio__txt {
+  font-size: 11px;
+  line-height: 17px;
+  color: #495f6a;
+  display: block;
+  padding-left: 17px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.b-porttfolio__h {
+  color: #31252c;
+  font-size: 13px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
 }
 /*===| .b-porttfolio |======================end==========================================*//*---| .b-control |----------------------start----------------------------------------*/
 .b-control {
