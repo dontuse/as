@@ -76,19 +76,19 @@ $(function () {
 
 $(function () {
 
-    $('.b-slider__box img').attr('data-animate','fadeIn, fadeOut');
-    $('.b-slider__box .b-slider__text').attr('data-animate','fadeIn, fadeOut');
+    $('.b-slider__box img').attr('data-animate', 'fadeIn, fadeOut');
+    $('.b-slider__box .b-slider__text').attr('data-animate', 'fadeIn, fadeOut');
 
     $('.js-slider').anythingSlider({
         animationTime: 0,  // no jQuery animation - no sliding left/right
         delayBeforeAnimate: 0, // add delay before switching so you can see the css3 animation
         buildStartStop: false,
         autoPlay: true,
-        hashTags : false
+        hashTags: false
     }).anythingSliderFx(
         {},    // no fx animation, it's all css baby!
         {
-            stopRepeat : false         // fx option to prevent repeating animation on startup/clicking the same slide (default is false)
+            stopRepeat: false         // fx option to prevent repeating animation on startup/clicking the same slide (default is false)
             //dataAnimate: ['rotateIn', 'rotateOut'] // data attribute containing the in and out animation.css class names to use
         }
     );
@@ -100,40 +100,42 @@ $(function () {
 
 /* colorbox*/
 
-$(function(){
-    $(".group4").colorbox({rel:'group4', slideshow:false , maxHeight: '98%'});
+$(function () {
 
-    $(".inline").colorbox({inline:true, width:"740px"});
+    $(".group4").colorbox({rel: 'group4', slideshow: false, maxHeight: '98%'});
+    $(".inline").colorbox({inline: true, width: "740px"});
+
 });
 
 /* colorbox*/
 
 
-$(function(){
-    $('.js-submenu').each(function(){
+$(function () {
+    $('.js-submenu').each(function () {
 
         var $block = $(this);
-        var $menu  = $('.b-table-menu__subnav' , this);
+        var $menu = $('.b-table-menu__subnav', this);
         var $lnk = $('.b-table-menu__a ', this);
         var $subNav = $('.b-table-menu__subnav', this).hide();
 
         var activeClass = 'b-table-menu__a_active';
 
-        $lnk.click(function(e){
+        $lnk.click(function (e) {
             e.preventDefault();
             e.stopPropagation();
 
-            if($subNav.is(':visible')) {
+            if ($subNav.is(':visible')) {
                 $subNav.hide();
 
                 $lnk.removeClass(activeClass);
             } else {
                 $subNav.show();
                 $lnk.addClass(activeClass);
-            };
+            }
+
         });
 
-        $('body').click( function (e) {
+        $('body').click(function (e) {
             // e.stopPropagation();
             $subNav.hide();
             $lnk.removeClass(activeClass);
