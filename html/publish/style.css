@@ -946,7 +946,13 @@ tbody tr:nth-child(even) {
 .b-button:hover {
   background: #ffc600;
 }
-/*===| .b-button |======================end==========================================*//*---| .b-dec-select |----------------------start----------------------------------------*/
+/*===| .b-button |======================end==========================================*/
+/*---| .b-button_t_upload |----------------------start----------------------------------------*/
+.b-button_t_upload,
+.b-button_t_upload:visited {
+  background: #b6c5cc;
+}
+/*===| .b-button_t_upload |======================end==========================================*//*---| .b-dec-select |----------------------start----------------------------------------*/
 .b-dec-select {
   display: inline-block;
   vertical-align: top;
@@ -1582,11 +1588,6 @@ tbody tr:nth-child(even) {
   font-size: 13px;
   line-height: 1;
 }
-.b-contol__radio {
-  display: block;
-  line-height: 23px;
-  margin-bottom: 10px;
-}
 .b-contol__radio-t {
   color: #6f706b;
 }
@@ -1610,7 +1611,17 @@ tbody tr:nth-child(even) {
 .b-control__t_3 .b-contol__input:nth-of-type(3n) {
   margin-right: 0;
 }
-/*---| .b-order |----------------------start----------------------------------------*/
+/*---| .b-control_upload |----------------------start----------------------------------------*/
+.b-control__upload {
+  line-height: 35px;
+  color: #495f6a;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+.b-control__f-type {
+  margin-left: 5px;
+}
+/*===| .b-control_upload |======================end==========================================*//*---| .b-order |----------------------start----------------------------------------*/
 .b-order {
   margin-bottom: 40px;
   *zoom: 1;
@@ -1814,7 +1825,16 @@ tbody tr:nth-child(even) {
   -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
   box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
 }
-/*===| .b-popup |======================end==========================================*//*---| .b-callUs |----------------------start----------------------------------------*/
+/*===| .b-popup |======================end==========================================*//*---| .b-form-info |----------------------start----------------------------------------*/
+.b-form-info__col {
+  float: left;
+  width: 319px;
+  margin-right: 45px;
+}
+.b-form-info__col_2 {
+  margin-right: 0;
+}
+/*===| .b-form-info |======================end==========================================*//*---| .b-callUs |----------------------start----------------------------------------*/
 .b-callUs-form {
   padding-top: 9px;
 }
