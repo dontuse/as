@@ -1308,6 +1308,9 @@ tbody tr:nth-child(even) {
 .b-porttfolio-i img {
   max-width: 100%;
 }
+.b-porttfolio-i__th_show_all {
+  background: #b6c5cc;
+}
 /*===| .b-porttfolio-i |======================end==========================================*/.b-proj-nav {
   *zoom: 1;
   margin-top: 40px;

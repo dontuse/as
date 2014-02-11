@@ -142,3 +142,18 @@ $(function () {
         })
     });
 });
+
+
+$(function(){
+
+
+    var $ph = $('.b-porttfolio-i__hidden-photo a').colorbox({rel: 'ph-all', slideshow: false, maxHeight: '98%'});
+
+    $('.js-porfolio-show-all').click(function(e){
+        e.preventDefault();
+        $('.b-porttfolio-i__hidden-photo a').eq(0).click();
+    });
+
+
+
+});
