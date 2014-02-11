@@ -3795,3 +3795,34 @@ $(".group4").colorbox({rel:'group4', slideshow:false , maxHeight: '98%'});
 $(".inline").colorbox({inline:true, width:"740px"});
 
 /* colorbox*/
+
+
+$('.js-submenu').each(function(){
+
+    var $block = $(this);
+    var $menu  = $('.b-table-menu__subnav' , this);
+    var $lnk = $('.b-table-menu__a ', this);
+    var $subNav = $('.b-table-menu__subnav', this).hide();
+
+    var activeClass = 'b-table-menu__a_active';
+
+    $lnk.click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        if($subNav.is(':visible')) {
+            $subNav.hide();
+
+            $lnk.removeClass(activeClass);
+        } else {
+            $subNav.show();
+            $lnk.addClass(activeClass);
+        };
+    });
+
+    $('body').click( function (e) {
+        e.stopPropagation();
+        $subNav.hide();
+        $lnk.removeClass(activeClass);
+    })
+});
