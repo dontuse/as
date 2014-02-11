@@ -1804,7 +1804,17 @@ tbody tr:nth-child(even) {
 .b-sub-nav__sub-box {
   margin-bottom: 10px;
 }
-/*---| .b-callUs |----------------------start----------------------------------------*/
+/*---| .b-popup |----------------------start----------------------------------------*/
+.b-popup {
+  padding: 30px;
+  background: #fff;
+  width: 688px;
+  height: 380px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+  box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
+}
+/*===| .b-popup |======================end==========================================*//*---| .b-callUs |----------------------start----------------------------------------*/
 .b-callUs-form {
   padding-top: 9px;
 }

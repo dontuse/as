@@ -103,7 +103,7 @@ $(function () {
 $(function () {
 
     $(".group4").colorbox({rel: 'group4', slideshow: false, maxHeight: '98%'});
-    $(".inline").colorbox({inline: true, width: "740px"});
+    $(".inline").colorbox({inline: true});
 
 });
 
