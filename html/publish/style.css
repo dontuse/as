@@ -946,7 +946,7 @@ tbody tr:nth-child(even) {
 .b-table-menu {
   background: #014d7f;
   position: relative;
-  z-index: 111;
+  z-index: 11;
 }
 .b-table-menu__table {
   width: 100%;
@@ -2149,26 +2149,26 @@ SET DEFAULT DIMENSIONS HERE
   background: url(../images/default.png) no-repeat;
 }
 .anythingSlider-default .back {
-  left: 100%;
-}
-.anythingSlider-default .back a {
-  background: url("../blocks//i-img/next-arrow.png") no-repeat;
-  margin-left: 20px;
-}
-.anythingSlider-default .back a:hover,
-.anythingSlider-default .back a.hover {
-  background: url("../blocks//i-img/next-arrow_active.png") no-repeat;
-}
-.anythingSlider-default .forward {
   right: 100%;
 }
-.anythingSlider-default .forward a {
+.anythingSlider-default .back a {
   background: url("../blocks//i-img/prev-arrow.png") no-repeat;
   margin-right: 20px;
 }
+.anythingSlider-default .back a:hover,
+.anythingSlider-default .back a.hover {
+  background: url("../blocks//i-img/prev-arrow_active.png") no-repeat;
+}
+.anythingSlider-default .forward {
+  left: 100%;
+}
+.anythingSlider-default .forward a {
+  background: url("../blocks//i-img/next-arrow.png") no-repeat;
+  margin-left: 20px;
+}
 .anythingSlider-default .forward a:hover,
 .anythingSlider-default .forward a.hover {
-  background: url("../blocks//i-img/prev-arrow_active.png") no-repeat;
+  background: url("../blocks//i-img/next-arrow_active.png") no-repeat;
 }
 .anythingSlider-default .anythingControls {
   outline: 0;

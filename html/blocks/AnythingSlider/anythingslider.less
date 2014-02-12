@@ -218,6 +218,22 @@ SET DEFAULT DIMENSIONS HERE
 
   /* back arrow */
   .back {
+    right: 100%;
+    // background: red;
+
+    a {
+      background: url("@{blockPath}/i-img/prev-arrow.png") no-repeat ;
+      margin-right: 20px;
+    }
+    a:hover, a.hover {
+      background: url("@{blockPath}/i-img/prev-arrow_active.png") no-repeat ;
+    }
+  }
+
+  /* forward arrow */
+  .forward {
+
+
     left: 100%;
     //background: red;
 
@@ -227,21 +243,6 @@ SET DEFAULT DIMENSIONS HERE
     }
     a:hover, a.hover {
       background: url("@{blockPath}/i-img/next-arrow_active.png") no-repeat ;
-    }
-
-  }
-
-  /* forward arrow */
-  .forward {
-    right: 100%;
-   // background: red;
-
-    a {
-      background: url("@{blockPath}/i-img/prev-arrow.png") no-repeat ;
-      margin-right: 20px;
-    }
-    a:hover, a.hover {
-      background: url("@{blockPath}/i-img/prev-arrow_active.png") no-repeat ;
     }
 
   }
