@@ -4655,8 +4655,8 @@ $(function () {
 
 $(function () {
 
-    $('.b-slider__box img').attr('data-animate', 'fadeIn, fadeOut');
-    $('.b-slider__box .b-slider__text').attr('data-animate', 'fadeIn, fadeOut');
+    $('.b-slider__box ').attr('data-animate', 'fadeIn, fadeOut');
+
 
     $('.js-slider').anythingSlider({
         animationTime: 0,  // no jQuery animation - no sliding left/right

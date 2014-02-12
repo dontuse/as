@@ -13,6 +13,14 @@
   overflow: hidden;
   display: none;
   position: relative;
+  width: 960px;
+  overflow: hidden;
+  .border-radius(3px);
+}
+
+.b-slider__box img {
+  display: block;
+  .border-radius(3px);
 }
 
 .b-slider__box_cur {
@@ -102,7 +110,7 @@
          * If animating elements inside the panel, include the element here ( e.g. #slider li, #slider img {...} )
          */
 
-.b-slider .b-slider__box img {
+.b-slider .b-slider__box{
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
