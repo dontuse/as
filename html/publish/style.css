@@ -697,7 +697,15 @@ tbody tr:nth-child(even) {
   margin-right: -670px;
   left: 259px;
 }
-/*===| .b-grid |======================end==========================================*//*---| .b-box |----------------------start----------------------------------------*/
+/*===| .b-grid |======================end==========================================*/
+.b-grid_type_2 .b-grid__col_2 {
+  left: 0;
+}
+.b-grid_type_2 .b-grid__col_1 {
+  left: 737px;
+  margin-right: -737px;
+}
+/*---| .b-box |----------------------start----------------------------------------*/
 .b-box {
   *zoom: 1;
   margin-bottom: 50px;
@@ -901,6 +909,7 @@ tbody tr:nth-child(even) {
 }
 .b-button:hover {
   background: #ffc600;
+  color: #ffffff;
 }
 /*===| .b-button |======================end==========================================*/
 /*---| .b-button_t_upload |----------------------start----------------------------------------*/
@@ -1156,7 +1165,54 @@ tbody tr:nth-child(even) {
   text-transform: uppercase;
   font-weight: bold;
 }
-/*===| .b-slider |======================end==========================================*//*---| .b-index-nav |----------------------start----------------------------------------*/
+/*===| .b-slider |======================end==========================================*/
+/* animate.css animation settings
+         * If animating elements inside the panel, include the element here ( e.g. #slider li, #slider img {...} )
+         */
+.b-slider .b-slider__box img {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: .2s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: .2s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+.b-slider__box .b-slider__text {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: .2s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: .2s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+/*---| .b-index-nav |----------------------start----------------------------------------*/
 .b-index-nav {
   *zoom: 1;
 }
@@ -1208,12 +1264,22 @@ tbody tr:nth-child(even) {
   color: #ffffff;
   padding-left: 13px;
 }
-.b-index-nav__lnk {
+.b-index-nav__lnk,
+.b-index-nav__lnk:visited {
   display: block;
   padding-left: 14px;
   border-bottom: 1px #ededed solid;
   line-height: 32px;
   background: url("../blocks//i-img/n.png") no-repeat 283px center;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.b-index-nav__lnk:last-child {
+  background: none;
+  text-decoration: underline;
+}
+.b-index-nav__lnk:hover {
+  color: darkgray;
 }
 /*===| .b-index-nav |======================end==========================================*//*---| .b-c-content |----------------------start----------------------------------------*/
 .b-c-content {

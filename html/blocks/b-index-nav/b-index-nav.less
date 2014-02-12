@@ -41,16 +41,24 @@
   padding-left: 13px;
 }
 
-.b-index-nav__lnk {
+.b-index-nav__lnk,
+.b-index-nav__lnk:visited {
   display: block;
   padding-left: 14px;
   border-bottom: 1px #ededed solid;
   line-height: 32px;
   background: url("@{blockPath}/i-img/n.png") no-repeat   283px center;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.b-index-nav__lnk:last-child {
+  background: none;
+  text-decoration: underline;
 }
 
 .b-index-nav__lnk:hover {
-
+  color: darkgray;
 }
 
 /*===| .b-index-nav |======================end==========================================*/
