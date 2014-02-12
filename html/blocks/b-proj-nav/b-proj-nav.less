@@ -4,12 +4,15 @@
   margin-top: 40px;
 }
 
-.b-proj-nav__a {
-  width: 467px;
+.b-proj-nav__a,
+.b-proj-nav__a:visited {
+  width: 466px;
   height: 105px;
   float: left;
   background: #ebf2f6;
-  margin-right: 10px;
+  margin-right: 25px;
+  text-decoration: none;
+  .transition(background 0.4s ease);
 }
 
 .b-proj-nav__a:last-child {
@@ -17,7 +20,8 @@
 }
 
 .b-proj-nav__a:hover  {
-  background: red;
+  background: darken(#ebf2f6, 10%);
+  color: #495f6a;
 }
 
 .b-proj-nav__a-pic {
@@ -32,8 +36,21 @@
   overflow: hidden;
   padding: 5px;
   display: block;
+  padding-top: 20px;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+.b-proj-nav__h {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  display: block;
+  color: #495f6a;
 }
 
 .b-proj-nav__txt {
   display: block;
+  color: #495f6a;
+  font-size: 11px;
 }
