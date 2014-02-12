@@ -1313,7 +1313,7 @@ tbody tr:nth-child(even) {
 }
 /*===| .b-porttfolio-i |======================end==========================================*/.b-proj-nav {
   *zoom: 1;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 .b-proj-nav:before,
 .b-proj-nav:after {
@@ -1370,6 +1370,7 @@ tbody tr:nth-child(even) {
   display: block;
   color: #495f6a;
   font-size: 11px;
+  line-height: 17px;
 }
 .b-prod {
   *zoom: 1;
