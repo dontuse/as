@@ -5,6 +5,7 @@
     "../js/lib/jquery.anythingslider.fx.js",
     "../js/lib/jquery.colorbox.js",
     "../js/lib/jquery.colorbox-ru.js",
+    "../js/lib/imagesloaded.pkgd.js",
     "../js/all.js"
 
 ]

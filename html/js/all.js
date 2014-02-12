@@ -144,16 +144,85 @@ $(function () {
 });
 
 
-$(function(){
+// портфолио галерея
+$(function () {
 
 
     var $ph = $('.b-porttfolio-i__hidden-photo a').colorbox({rel: 'ph-all', slideshow: false, maxHeight: '98%'});
 
-    $('.js-porfolio-show-all').click(function(e){
+    $('.js-porfolio-show-all').click(function (e) {
         e.preventDefault();
         $('.b-porttfolio-i__hidden-photo a').eq(0).click();
     });
 
 
+});
 
+$(function () {
+
+
+
+    // gallery container
+    var $block = $('.js-porfolio-gal'),
+    // the carousel items
+        $items = $('.b-porttfolio-i__th', $block),
+    // total number of items
+        itemsCount = $items.length;
+
+    var Gallery = (function () {
+        // index of the current item
+        var current = 0,
+        // mode : carousel || fullview
+            mode = 'carousel',
+        // control if one image is being loaded
+            anim = false,
+            init = function () {
+
+                _initCarousel();
+                _showImage($items.eq(0));
+
+            },
+            _initCarousel = function () {
+
+                $items.on('click', function (e) {
+                    e.preventDefault();
+                    _showImage($(this));
+                });
+
+            },
+            _showImage = function ($item) {
+                $('.b-card__make-big-video', $block).hide();
+                $('.js-galleryBigImg', $block).fadeIn(200);
+
+                // shows the large image that is associated to the $item
+
+                var $loader = $block.find('.b-card__img-b__rg-loading').show();
+
+                $('.b-porttfolio-i__th_active', $block).removeClass('b-porttfolio-i__th_active ');
+                $item.addClass('b-porttfolio-i__th_active ');
+
+                var $thumb = $item,
+                    largesrc = $thumb.attr('href'),
+                    title = $thumb.data('description');
+
+                $('<img/>').load(function () {
+
+                    $block.find('.js-porfolio-gal__l-pic').empty().append('<img src="' + largesrc + '"/>').hide().fadeIn(400);
+
+                    $loader.hide();
+
+
+                    anim = false;
+
+                }).attr('src', largesrc);
+
+            };
+
+        return {
+            init: init
+        };
+
+    })();
+
+    Gallery.init();
 });
