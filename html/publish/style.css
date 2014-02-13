@@ -865,6 +865,9 @@ tbody tr:nth-child(even) {
 .b-input:focus {
   outline: #ff0000 2px;
 }
+.b-input__f-text {
+  font-size: 13px;
+}
 /*===| .b-input |======================end==========================================*//*---| .b-logo |----------------------start----------------------------------------*/
 .b-logo,
 .b-logo:visited {
@@ -1782,7 +1785,7 @@ tbody tr:nth-child(even) {
 .b-control__upload {
   line-height: 35px;
   color: #495f6a;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   font-size: 11px;
 }
 .b-control__f-type {
