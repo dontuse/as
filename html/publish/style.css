@@ -743,6 +743,9 @@ tbody tr:nth-child(even) {
 .b-footer {
   background: #ebf2f6;
   height: 128px;
+  color: #495f6a;
+  font-size: 11px;
+  line-height: 17px;
 }
 .b-footer__in {
   *zoom: 1;
@@ -761,20 +764,23 @@ tbody tr:nth-child(even) {
 .b-footer__box-3,
 .b-footer__box-4 {
   float: left;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 .b-footer__box-1 {
   width: 206px;
   margin-right: 41px;
+  font-size: 11px ;
 }
 .b-footer__box-2 {
   width: 265px;
   margin-right: 118px;
   margin-right: 52px;
+  margin-top: 31px;
 }
 .b-footer__box-3 {
   width: 183px;
   margin-right: 52px;
+  margin-top: 31px;
 }
 .b-footer__box-4 {
   width: 120px;
@@ -878,6 +884,7 @@ tbody tr:nth-child(even) {
   width: 46px;
   height: 35px;
   background: url("../blocks//i-img/logo2.png") no-repeat;
+  margin-bottom: 8px;
 }
 /*---| .b-button |----------------------start----------------------------------------*/
 .b-button,
@@ -1299,6 +1306,8 @@ tbody tr:nth-child(even) {
 .b-index-nav__lnk:last-child {
   background: none;
   text-decoration: underline;
+  font-size: 11px;
+  color: #426373;
 }
 .b-index-nav__lnk:hover {
   color: darkgray;
@@ -1312,7 +1321,7 @@ tbody tr:nth-child(even) {
   /* Safari and Chrome */
 
   column-count: 2;
-  padding-top: 20px;
+  padding-top: 31px;
   -webkit-column-gap: 35px;
   column-gap: 470px;
   margin-bottom: 50px;
@@ -1841,7 +1850,7 @@ tbody tr:nth-child(even) {
 .b-carousel {
   background: #ebf2f6;
   padding-top: 27px;
-  padding-bottom: 23px;
+  padding-bottom: 4px;
 }
 .b-carousel__h {
   font-size: 20px;
