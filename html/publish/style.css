@@ -687,16 +687,16 @@ tbody tr:nth-child(even) {
 .b-grid__col_1 {
   position: relative;
   float: left;
-  width: 230px;
-  margin-right: -230px;
+  width: 215px;
+  margin-right: -215px;
   left: 0;
 }
 .b-grid__col_2 {
   position: relative;
   float: left;
   width: 719px;
-  margin-right: -670px;
-  left: 259px;
+  margin-right: -719px;
+  left: 241px;
 }
 /*===| .b-grid |======================end==========================================*/
 .b-grid_type_2 .b-grid__col_2 {
@@ -779,11 +779,12 @@ tbody tr:nth-child(even) {
 }
 .b-footer__box-3 {
   width: 183px;
-  margin-right: 52px;
+  margin-right: 90px;
   margin-top: 31px;
 }
 .b-footer__box-4 {
   width: 120px;
+  margin-top: 27px;
 }
 /*===| .b-footer |======================end==========================================*//*---| .b-page |----------------------start----------------------------------------*/
 .b-page {
@@ -844,7 +845,6 @@ tbody tr:nth-child(even) {
 }
 /*===| .b-header |======================end==========================================*//*---| .b-content |----------------------start----------------------------------------*/
 .b-content {
-  overflow: hidden;
   padding-bottom: 120px;
 }
 /*===| .b-content |======================end==========================================*//*---| .b-input |----------------------start----------------------------------------*/
@@ -1026,7 +1026,7 @@ tbody tr:nth-child(even) {
 }
 /*===| .b-pagination |======================end==========================================*//*---| .b-breadcrumbs |----------------------start----------------------------------------*/
 .b-breadcrumb {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   color: #495f6a;
   font-size: 11px;
 }
@@ -1079,6 +1079,7 @@ tbody tr:nth-child(even) {
   background: url("../blocks//b-jet/jet-logo.png") no-repeat 0 -49px;
   overflow: hidden;
   text-indent: -999999px;
+  margin-bottom: 7px;
 }
 .b-jet__txt,
 .b-jet__txt:visited {
@@ -1924,15 +1925,27 @@ tbody tr:nth-child(even) {
 .b-documents__down-lnk span {
   text-decoration: underline;
 }
+.b-sub-nav {
+  margin-top: -6px;
+}
 .b-sub-nav__sub {
-  margin-left: 50px;
+  margin-left: 47px;
 }
 .b-sub-nav__item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+.b-sub-nav__sub-lnk {
+  color: #495f6a;
+  text-decoration: none;
+}
+.b-sub-nav__sub-lnk:hover,
+.b-sub-nav__sub-lnk_active,
+.b-sub-nav__sub-lnk_active:visited {
+  color: #0163a0;
 }
 .b-sub-nav__lnk-top,
 .b-sub-nav__lnk-top:visited {
-  padding-left: 49px;
+  padding-left: 38px;
   background: url("../blocks//i-img/menu-icons/1.png") no-repeat 0 0;
   padding-top: 8px;
   padding-bottom: 11px;
@@ -1950,7 +1963,7 @@ tbody tr:nth-child(even) {
   background: url("../blocks//i-img/menu-icons/3.png") no-repeat 0 0;
 }
 .b-sub-nav__sub-box {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 /*---| .b-popup |----------------------start----------------------------------------*/
 .b-popup {
