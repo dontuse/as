@@ -984,6 +984,7 @@ tbody tr:nth-child(even) {
   text-decoration: none;
   white-space: nowrap;
   text-transform: uppercase;
+  padding: 0 20px;
 }
 .b-table-menu__a:hover {
   background-color: #016cb2;
@@ -1333,7 +1334,7 @@ tbody tr:nth-child(even) {
   column-count: 2;
   padding-top: 31px;
   -webkit-column-gap: 35px;
-  column-gap: 470px;
+  column-gap: 35px;
   margin-bottom: 50px;
 }
 /*===| .b-c-content |======================end==========================================*//*---| .b-porttfolio-i |----------------------start----------------------------------------*/
