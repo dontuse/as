@@ -1480,6 +1480,7 @@ tbody tr:nth-child(even) {
 .b-prod {
   *zoom: 1;
   margin-bottom: 20px;
+  margin-top: 32px;
 }
 .b-prod:before,
 .b-prod:after {
@@ -1509,6 +1510,7 @@ tbody tr:nth-child(even) {
   -moz-box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
   box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .b-prod-el:nth-child(even) {
   margin-right: 0;
@@ -1522,7 +1524,7 @@ tbody tr:nth-child(even) {
 }
 .b-prod__title {
   position: absolute;
-  width: 100%;
+  right: 0;
   left: 0;
   bottom: 0;
   color: #ffffff;
@@ -1531,6 +1533,9 @@ tbody tr:nth-child(even) {
   white-space: nowrap;
   overflow: hidden;
   text-indent: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
 }
 /*---| .b-porttfolio |----------------------start----------------------------------------*/
 .b-porttfolio {
