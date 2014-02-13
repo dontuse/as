@@ -4899,38 +4899,41 @@ $(function () {
         var error = false;
 
         // собрать все инпуты с валидацией
-        $('.b-contact-form__inp[data-required="true"]', $block).each(function () {
+        $('.b-contol__input[data-required="true"]', $block).each(function () {
             //console.log(this);
             $input = $(this);
             $label = $('label[for="' + $input.attr('id') + '"]');
 
-            if (j.nsFormValidator.validateElement($input)) {
-                $label.addClass('b-contact-form__lab_error');
+            if (jt.nsFormValidator.validateElement($input)) {
+                $label.addClass('');
                 $input.addClass('b-input_invalid');
+                $input.parents('.b-control').addClass('b-control_state_error');
                 error = true;
             }
             else {
                 //console.log('valid');
                 $label.removeClass('b-contact-form__lab_error');
                 $input.removeClass('b-input_invalid b-textarea_invalid');
+                $input.parents('.b-control').removeClass('b-control_state_error');
             }
         });
 
         // собрать текстареи
-        $('.b-contact-form__textarea[data-required="true"]', $block).each(function () {
+        $('.b-contol__textarea[data-required="true"]', $block).each(function () {
             $input = $(this);
 
             $label = $('label[for="' + $input.attr('id') + '"]');
 
-            if (j.nsFormValidator.validateElement($(this), 'textarea')) {
-                $label.addClass('b-contact-form__lab_error');
-                $(this).addClass('b-textarea_invalid');
+            if (jt.nsFormValidator.validateElement($(this), 'textarea')) {
+                $label.addClass('');
+                $input.addClass('b-input_invalid');
+                $input.parents('.b-control').addClass('b-control_state_error');
                 error = true;
             }
             else {
-                //console.log('valid');
                 $label.removeClass('b-contact-form__lab_error');
-                $(this).removeClass('b-input_invalid b-textarea_invalid');
+                $input.removeClass('b-input_invalid b-textarea_invalid');
+                $input.parents('.b-control').removeClass('b-control_state_error');
             }
         });
 
@@ -4940,7 +4943,7 @@ $(function () {
 
             $.post($form.attr('action'), validData).done(function (res) {
                 console.log(res);
-                $('.js-cont-form').slideUp();
+                $('.b-callUs-form').slideUp();
                 $('.js-cont-resilt').slideDown();
             });
             $errorBox.hide();
