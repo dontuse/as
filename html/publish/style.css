@@ -667,13 +667,32 @@ tbody tr:nth-child(even) {
 .b-text__img {
   max-width: 100%;
 }
-.b-text__container {
-  margin-bottom: 32px;
+.b-text .b-text__container {
+  margin-bottom: 18px;
+  *zoom: 1;
 }
-.b-text__container ul {
+.b-text .b-text__container:before,
+.b-text .b-text__container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-text .b-text__container:after {
+  clear: both;
+}
+.b-text .b-text__container-pic {
+  float: left;
+  width: 231px;
+  text-align: center;
+  line-height: 191px;
+}
+.b-text .b-text__container-txt {
+  margin-left: 247px;
+}
+.b-text .b-text__container ul {
   padding: 0;
 }
-.b-text__container ul li {
+.b-text .b-text__container ul li {
   margin-bottom: 10px;
 }
 /*===| b-text |=================================================================*//*--------------------------*/
