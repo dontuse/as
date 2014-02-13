@@ -1,4 +1,71 @@
-var glb = {};
+/*fom validation*/
+var jt = {};
+jt.nsFormValidator = {
+
+    mailPattern: new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i),
+    phonePattern: new RegExp(/^[0-9\-()\+\s]+$/),
+    textPattern: new RegExp(/^[a-zA-Zа-яА-Я\s\-.]+$/),
+    numPattern: new RegExp(/^[0-9.\s]+$/),
+
+    validateElement: function ($wrapper, control) {
+        var error = false;
+        if (!control) {
+            var input = $wrapper;
+        }
+        else {
+            var input = $wrapper;
+        }
+
+
+        var $container = $($wrapper).find('.b-inp__val-box');
+
+        if (!input.length) {
+            input = $($wrapper).find('.b-select__select');
+
+            var selectValResult = parseInt(input.val()) === 0;
+
+            //select
+            if (($wrapper.data('required') === true) && (selectValResult)) {
+                this.showError("Необходимо выбрать", $container, 'b-inp__val-box_invalid');
+                return true;
+            }
+        }
+
+        // required
+        if (($wrapper.data('required') === true) && (!(input.val()))) {
+            //this.showError("Необходимо заполнить", $container, 'b-inp__val-box_invalid');
+            return true;
+        }
+
+        // mail
+        else if (($wrapper.data('type') === 'mail') && (!this.mailPattern.test(input.val()))) {
+
+            //this.showError("Неверный адрес", $container, 'b-inp__val-box_invalid');
+
+            return true;
+        }  // телефон
+        else if (($wrapper.data('type') === 'phone') && ((input.val())) && (!this.phonePattern.test(input.val()))) {
+
+            //this.showError("Неверный телефон", $container, 'b-inp__val-box_invalid');
+            return true;
+        }  // text
+        else if (($wrapper.data('type') === 'text') && ((input.val())) && (!this.textPattern.test(input.val()))) {
+
+            // this.showError("Неверное ФИО", $container, 'b-inp__val-box_invalid');
+            return true;
+        }
+        else { // все валидно
+            //this.showValid($container, 'b-inp__val-box_invalid');
+            return false;
+        }
+    },
+    showError: function (message, $container, cssClass) {
+        $container.addClass(cssClass).html(message).show();
+    },
+    showValid: function ($container, cssClass) {
+        $container.removeClass(cssClass).empty().show();
+    }
+};
 
 
 $(function () {
@@ -226,4 +293,87 @@ $(function () {
     })();
 
     Gallery.init();
+});
+
+
+$(function () {
+    // Написать письмо
+    var $block = $('.js-write-a-letter');
+
+    if ($block.length === 0) {
+        return;
+    }
+
+    var $button = $('.js-wr-send', $block);
+    var invalidInp = 'b-input_invalid';
+    var $form = $('#js-write-a-letter');
+    var formAction = $form.attr('action');
+    var capchaValid = false;
+    var $errorBox = $('.b-popup__error', $block);
+    var $acceptChkBox = $('#write-a-letter__accept', $block);
+
+    $button.click(function (e) {
+        e.preventDefault();
+        // собрать все инпуты с валидацией
+        var $input;
+        var $label;
+        var error = false;
+
+        // собрать все инпуты с валидацией
+        $('.b-contact-form__inp[data-required="true"]', $block).each(function () {
+            //console.log(this);
+            $input = $(this);
+            $label = $('label[for="' + $input.attr('id') + '"]');
+
+            if (j.nsFormValidator.validateElement($input)) {
+                $label.addClass('b-contact-form__lab_error');
+                $input.addClass('b-input_invalid');
+                error = true;
+            }
+            else {
+                //console.log('valid');
+                $label.removeClass('b-contact-form__lab_error');
+                $input.removeClass('b-input_invalid b-textarea_invalid');
+            }
+        });
+
+        // собрать текстареи
+        $('.b-contact-form__textarea[data-required="true"]', $block).each(function () {
+            $input = $(this);
+
+            $label = $('label[for="' + $input.attr('id') + '"]');
+
+            if (j.nsFormValidator.validateElement($(this), 'textarea')) {
+                $label.addClass('b-contact-form__lab_error');
+                $(this).addClass('b-textarea_invalid');
+                error = true;
+            }
+            else {
+                //console.log('valid');
+                $label.removeClass('b-contact-form__lab_error');
+                $(this).removeClass('b-input_invalid b-textarea_invalid');
+            }
+        });
+
+
+        if (error === false) {
+            var validData = $form.serialize();
+
+            $.post($form.attr('action'), validData).done(function (res) {
+                console.log(res);
+                $('.js-cont-form').slideUp();
+                $('.js-cont-resilt').slideDown();
+            });
+            $errorBox.hide();
+        }
+        else {
+            $errorBox.show();
+        }
+    });
+
+    $('.js-wr-back').click( function(e) {
+        $('.js-cont-form').slideDown();
+        $('.js-cont-resilt').slideUp();
+
+    })
 });

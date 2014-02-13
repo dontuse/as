@@ -44,57 +44,59 @@
             </p>
         </div>
 
-        <div class="b-callUs-form">
+        <form id="js-write-a-letter" class="js-write-a-letter" action="ajax/cy.json">
+            <div class="b-callUs-form">
 
-            <div class="b-callUs-form__col-1">
-                <div class="b-control">
-                    <div class="b-contol__col-1">
-                        <label class="b-contol__label">Ваше имя </label>
-                    </div>
-                    <div class="b-contol__col-2">
-                        <i class="b-contol__r">*</i>
-                        <input placeholder="Фамилия Имя Отчество" value="" class="b-contol__input">
+                <div class="b-callUs-form__col-1">
+                    <div class="b-control">
+                        <div class="b-contol__col-1">
+                            <label class="b-contol__label">Ваше имя </label>
+                        </div>
+                        <div class="b-contol__col-2">
+                            <i class="b-contol__r">*</i>
+                            <input placeholder="Фамилия Имя Отчество" value="" class="b-contol__input">
                         <span class="b-contol__error">
                             Необходимо заполнить это поле.
                         </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="b-callUs-form__col-2">
-                <div class="b-control b-control_state_error">
-                    <div class="b-contol__col-1">
-                        <label class="b-contol__label">Телефон / факс</label>
-                    </div>
-                    <div class="b-contol__col-2">
-                        <i class="b-contol__r">*</i>
-                        <input placeholder="+7 9222222222" value="" class="b-contol__input">
+                <div class="b-callUs-form__col-2">
+                    <div class="b-control b-control_state_error">
+                        <div class="b-contol__col-1">
+                            <label class="b-contol__label">Телефон / факс</label>
+                        </div>
+                        <div class="b-contol__col-2">
+                            <i class="b-contol__r">*</i>
+                            <input placeholder="+7 9222222222" value="" class="b-contol__input">
                         <span class="b-contol__error">
                             Необходимо заполнить это поле.
                         </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="b-callUs-form__row">
-                <div class="b-control">
-                    <div class="b-contol__col-1">
-                        <label class="b-contol__label">Опишите, что вам необходимо</label>
-                    </div>
-                    <div class="b-contol__col-2">
-                        <i class="b-contol__r">*</i>
-                        <textarea class="b-contol__textarea"
-                                  placeholder="Например, вам необходимо построить завод"></textarea>
+                <div class="b-callUs-form__row">
+                    <div class="b-control">
+                        <div class="b-contol__col-1">
+                            <label class="b-contol__label">Опишите, что вам необходимо</label>
+                        </div>
+                        <div class="b-contol__col-2">
+                            <i class="b-contol__r">*</i>
+                            <textarea class="b-contol__textarea"
+                                      placeholder="Например, вам необходимо построить завод"></textarea>
                         <span class="b-contol__error">
                             Необходимо заполнить это поле.
                         </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="b-callUs-form__col-2">
-                <a style="width: 100%; text-align: center;" class="b-button" href="">Отправить</a>
+                <div class="b-callUs-form__col-2">
+                    <a style="width: 100%; text-align: center;" class="b-button js-wr-send" href="">Отправить</a>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>
