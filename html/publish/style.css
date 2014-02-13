@@ -1068,6 +1068,9 @@ tbody tr:nth-child(even) {
   color: #31252c;
 }
 /*---| .b-jet |----------------------start----------------------------------------*/
+.b-jet {
+  font-size: 11px;
+}
 .b-jet__logo,
 .b-jet__logo:visited {
   display: block;
@@ -1079,7 +1082,7 @@ tbody tr:nth-child(even) {
 }
 .b-jet__txt,
 .b-jet__txt:visited {
-  font-size: 13px;
+  font-size: 11px;
   color: #afafaf;
   line-height: 19px;
 }
