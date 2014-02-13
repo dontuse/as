@@ -1511,6 +1511,16 @@ tbody tr:nth-child(even) {
   box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
   margin-bottom: 20px;
   overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.b-prod-el:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 31, 62, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 31, 62, 0.4);
+  box-shadow: 0 0 10px rgba(0, 31, 62, 0.4);
 }
 .b-prod-el:nth-child(even) {
   margin-right: 0;
@@ -1570,6 +1580,16 @@ tbody tr:nth-child(even) {
   -moz-background-clip: padding;
   border-radius: 2px;
   background-clip: padding-box;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.b-porttfolio__el:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 31, 62, 0.6);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 31, 62, 0.6);
+  box-shadow: 0px 0px 15px rgba(0, 31, 62, 0.6);
 }
 .b-porttfolio__el:nth-child(3n) {
   margin-right: 0;
@@ -1984,6 +2004,10 @@ tbody tr:nth-child(even) {
   box-shadow: 0 0 5px rgba(0, 31, 62, 0.4);
 }
 /*===| .b-popup |======================end==========================================*//*---| .b-form-info |----------------------start----------------------------------------*/
+.b-form-info {
+  border-top: 1px solid #d5d8dc;
+  padding-top: 24px;
+}
 .b-form-info__col {
   float: left;
   width: 319px;
