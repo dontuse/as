@@ -917,6 +917,7 @@ tbody tr:nth-child(even) {
   box-shadow: 0 1px 2px rgba(0, 31, 62, 0.5);
   cursor: pointer;
   text-decoration: none;
+  font-family: Verdana, "Bitstream Vera Sans", "DejaVu Sans", "Liberation Sans", Geneva, sans-serif;
 }
 .b-button:hover {
   background: #ffc600;
@@ -927,6 +928,8 @@ tbody tr:nth-child(even) {
 .b-button_t_upload,
 .b-button_t_upload:visited {
   background: #b6c5cc;
+  width: 103px;
+  text-align: center;
 }
 /*===| .b-button_t_upload |======================end==========================================*//*---| .b-dec-select |----------------------start----------------------------------------*/
 .b-dec-select {
@@ -1765,6 +1768,13 @@ tbody tr:nth-child(even) {
 .b-control__t_3 .b-contol__input:after {
   content: 'x';
 }
+.b-control__x {
+  left: 97px;
+  line-height: 1;
+  font-size: 14px;
+  color: #ebf2f6;
+  top: 8px;
+}
 .b-control__t_3 .b-contol__input:nth-of-type(3n) {
   margin-right: 0;
 }
@@ -1791,6 +1801,9 @@ tbody tr:nth-child(even) {
 }
 /*===| .b-control_radio |======================end==========================================*/
 /*---| .b-control_capcha |----------------------start----------------------------------------*/
+.b-control_capcha {
+  margin-bottom: 45px;
+}
 .b-control_capcha .b-contol__r {
   right: 160px;
 }
@@ -1798,7 +1811,12 @@ tbody tr:nth-child(even) {
   width: 169px;
   margin-right: 21px;
 }
-/*===| .b-control_capcha |======================end==========================================*//*---| .b-order |----------------------start----------------------------------------*/
+/*===| .b-control_capcha |======================end==========================================*/
+/*---| .b-control_file |----------------------start----------------------------------------*/
+.b-control_file .b-contol__col-1 {
+  margin-bottom: 18px;
+}
+/*===| .b-control_file |======================end==========================================*//*---| .b-order |----------------------start----------------------------------------*/
 .b-order {
   margin-bottom: 40px;
   *zoom: 1;
