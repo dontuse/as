@@ -1786,7 +1786,16 @@ tbody tr:nth-child(even) {
 .b-control_radio .b-contol__col-1 {
   margin-bottom: 20px;
 }
-/*===| .b-control_radio |======================end==========================================*//*---| .b-order |----------------------start----------------------------------------*/
+/*===| .b-control_radio |======================end==========================================*/
+/*---| .b-control_capcha |----------------------start----------------------------------------*/
+.b-control_capcha .b-contol__r {
+  right: 160px;
+}
+.b-control_capcha .b-contol__input {
+  width: 169px;
+  margin-right: 21px;
+}
+/*===| .b-control_capcha |======================end==========================================*//*---| .b-order |----------------------start----------------------------------------*/
 .b-order {
   margin-bottom: 40px;
   *zoom: 1;
@@ -1803,7 +1812,7 @@ tbody tr:nth-child(even) {
 .b-order__col {
   float: left;
   width: 318px;
-  margin-right: 48px;
+  margin-right: 55px;
 }
 .b-order__col:last-child {
   margin-right: 0;
